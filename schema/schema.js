@@ -14,7 +14,6 @@ const {
     GraphQLNonNull
 } = graphql;
 
-
 // dummy data
 // var books = [
 //     {name: 'sailor', genre: 'horror', id:'2', authorId:'2'},
