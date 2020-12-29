@@ -9,7 +9,7 @@ const app = express()
 // allow cross origin request
 app.use(cors())
 
-mongoose.connect('mongodb+srv://gpl-test:420059@cluster0.0fywb.mongodb.net/Cluster0?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://gpl-test:420059@cluster0.0fywb.mongodb.net/Cluster0?retryWrites=true&w=majority', { useNewUrlParser: true })
 mongoose.connection.once('open', () => {
     console.log('conneted to db')
 })
