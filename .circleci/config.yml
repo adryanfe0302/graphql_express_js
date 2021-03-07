@@ -2,6 +2,6 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.0
 workflows:
-  graphql_express_js:
+  node-tests:
     jobs:
-      - heroku/deploy-via-git
+      - node/test
