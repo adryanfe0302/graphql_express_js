@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://adryanfe0302.github.io/graphql_express_js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +19,8 @@
     "lodash": "^4.17.20",
     "mongoose": "^5.11.4",
     "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
